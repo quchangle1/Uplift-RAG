@@ -4,8 +4,10 @@ The implementation for EMNLP 2025 Submission: Uplift-RAG: Uplift-Driven Knowledg
 ## How to run the code
 
 1.Download the roberta-base from [Huggingface](https://huggingface.co/FacebookAI/roberta-base).
+
 2.Run Training:
-    > python train_reranker.py --pretrained_model_path="roberta-base" --learning_rate=1e-5 --dataset="dataset/web_questions" --gpu=0 --infer="False" --cls_loss --pair_loss --list_loss 
+	> python train_reranker.py --pretrained_model_path="roberta-base" --learning_rate=1e-5 --dataset="dataset/web_questions" --gpu=0 --infer="False" --cls_loss --pair_loss --list_loss 
+
 3.Run Inference:
     > python train_reranker.py --pretrained_model_path="roberta-base" --learning_rate=1e-5 --dataset="dataset/web_questions" --gpu=0 --infer="True" --cls_loss --pair_loss --list_loss --weight=""
 
